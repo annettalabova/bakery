@@ -1,27 +1,27 @@
 // Глобальные настройки //
-@import './utils/fonts';
-@import './utils/variables';
-@import './base';
-@import './utils/texts';
-@import './utils/utils';
-@import './utils/mixins';
+@use 'utils/fonts' as *;
+@use 'utils/variables' as *;
+@use 'base';
+@use 'utils/texts' as *;
+@use 'utils/utils' as *;
+@use 'utils/mixins' as *;
 
 // Компоненты //
-@import './components/buttons';
-@import './components/chef-card';
-@import './components/corousel-button';
-@import './components/format-card';
-@import './components/input';
-@import './components/links';
+@use 'components/buttons';
+@use 'components/chef-card';
+@use 'components/corousel-button';
+@use 'components/format-card';
+@use 'components/input';
+@use 'components/links';
 
-@import './layouts/advantages-section';
-@import './layouts/chefs-section';
-@import './layouts/contact-section';
-@import './layouts/footer';
-@import './layouts/form-terms';
-@import './layouts/formats-section';
-@import './layouts/header';
-@import './layouts/hero-section';
-@import './layouts/modal';
-@import './layouts/section';
-@import './layouts/traditions-section';
+@use 'layouts/advantages-section';
+@use 'layouts/chefs-section';
+@use 'layouts/contact-section';
+@use 'layouts/footer';
+@use 'layouts/form-terms';
+@use 'layouts/formats-section';
+@use 'layouts/header';
+@use 'layouts/hero-section';
+@use 'layouts/modal';
+@use 'layouts/section';
+@use 'layouts/traditions-section';
