@@ -1,10 +1,6 @@
 // Глобальные настройки //
-@use 'utils/fonts' as *;
-@use 'utils/variables' as *;
+@use 'utils/globals' as *;
 @use 'base';
-@use 'utils/texts' as *;
-@use 'utils/utils' as *;
-@use 'utils/mixins' as *;
 
 // Компоненты //
 @use 'components/buttons';
@@ -22,6 +18,7 @@
 @use 'layouts/formats-section';
 @use 'layouts/header';
 @use 'layouts/hero-section';
+@use 'layouts/mobile-menu';
 @use 'layouts/modal';
 @use 'layouts/section';
 @use 'layouts/traditions-section';
