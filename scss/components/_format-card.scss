@@ -13,10 +13,7 @@
     var(--color-primary-dark) 100%
   );
   transition: transform 0.3s;
-
-  &:hover {
-    transform: scale(1.05);
-  }
+  overflow: hidden;
 
   &__image {
     position: absolute;

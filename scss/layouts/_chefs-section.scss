@@ -1,16 +1,26 @@
+@use '../utils/globals' as *;
+
 .chefs-section {
   &__title {
     position: relative;
-    margin: 0 auto 80px;
+    margin: 0 auto 24px;
+
+    @media screen and (min-width: $br-desktop) {
+      margin-bottom: 80px;
+    }
 
     &::before,
     &::after {
+      display: none;
       position: absolute;
       bottom: 24px;
-      display: block;
       content: '';
       width: 352px;
       border: 2px solid var(--color-brand-normal);
+
+      @media screen and (min-width: $br-desktop) {
+        display: block;
+      }
     }
 
     &::before {
@@ -23,11 +33,19 @@
   }
   &__list {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 40px 30px;
+    gap: 40px;
+
+    @media screen and (min-width: $br-tablet) {
+      flex-direction: row;
+      gap: 40px 30px;
+    }
   }
 
   &__item {
-    flex-basis: calc((100% - 30px) / 2);
+    @media screen and (min-width: $br-tablet) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
   }
 }
