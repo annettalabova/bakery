@@ -20,22 +20,45 @@
 						<img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
 					</a>
 					<ul class="header__menu">
-						<li>
-							<a class="link" href="#traditions-section">Наші традиції</a>
-						</li>
+						<li><a class="link" href="#traditions-section">Наші традиції</a></li>
 						<li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
 						<li><a class="link" href="#formats-section">Формати</a></li>
 						<li><a class="link" href="#contact-section">Контакти</a></li>
 					</ul>
 				</nav>
 				<button class="header__button button modal-btn-open" type="button">Замовити дзвінок</button>
-				<button class="header__burger menu-btn-open" type="button">
-					<svg width="24" height="24">
+
+				<!-- Burger menu -->
+				<button class="header__burger menu-btn-open" type="button" aria-label="Відкрити меню">
+					<svg class="header__burger-icon" width="24" height="24">
 						<use href="./images/icons.svg#icon-menu"></use>
 					</svg>
+					<span class="header__burger-line"></span>
+					<span class="header__burger-line"></span>
+					<span class="header__burger-line"></span>
 				</button>
+				<!-- Mobile menu -->
 				<div class="mobile-menu">
-					<button class="mobile-menu__btn-close menu-btn-close" type="button">Close</button>
+					<div class="mobile-menu__top">
+						<a href="./index.html" class="mobile-menu__logo">
+							<img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
+						</a>
+
+						<button class="mobile-menu__btn-close menu-btn-close" type="button" aria-label="Закрити меню">
+							✕
+						</button>
+					</div>
+
+					<nav class="mobile-menu__nav">
+						<a class="mobile-menu__link" href="#traditions-section">Наші традиції</a>
+						<a class="mobile-menu__link" href="#chefs-section">Шеф-кухарі</a>
+						<a class="mobile-menu__link" href="#formats-section">Формати</a>
+						<a class="mobile-menu__link" href="#contact-section">Контакти</a>
+					</nav>
+
+					<div class="mobile-menu__image-wrap">
+						<img src="./images/breadmobile.png" alt="Хліб" class="mobile-menu__image" />
+					</div>
 				</div>
 			</div>
 		</div>
